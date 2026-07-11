@@ -2,4 +2,4 @@ client_secret_895506429293-cscauq5pcecd11u7hkj3t2s6llel3rd8.apps.googleuserconte
 token.json
 config.json
 /logs
-
+.env
