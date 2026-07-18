@@ -45,6 +45,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from typing import Any, TypedDict
+from dotenv import load_dotenv
 
 # Silence noisy deprecation warnings emitted by some google client versions.
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -84,8 +85,6 @@ def load_dotenv_file(env_path: str | os.PathLike[str] = ".env") -> None:
     path = Path(env_path)
 
     try:
-        from dotenv import load_dotenv
-
         load_dotenv(dotenv_path=str(path) if path.is_file() else None, override=False)
         return
     except ImportError:
