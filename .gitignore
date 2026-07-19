@@ -11,4 +11,4 @@ __pycache__/
 .claude/
 .mypy_cache/
 versions/
-__pycache__/
+__pycache__/client_secret.json
