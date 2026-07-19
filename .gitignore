@@ -3,3 +3,12 @@ token.json
 config.json
 /logs
 .env
+pid.json
+__pycache__/
+*.pyc
+.mypy_cache/
+.venv/
+.claude/
+.mypy_cache/
+versions/
+__pycache__/
